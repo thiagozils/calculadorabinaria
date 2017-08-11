@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+body{
+  font-family: 'Roboto', sans-serif;  
+    background-color: #FDFDFD;
+}
+
+.configdiv {
+    border: 1px solid #DDDDDD;
+    margin-bottom: 25px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.btn {
+    margin-right: 30px;;
+    margin-top: 3px;
+}
+
+.divTitulo{
+        margin-bottom: -10px;
+        background-color: #E8E8E8;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+}
+.form-group{
+	padding-top:5px;
+}
+
+
+
+label { 
+align: left;
+}
