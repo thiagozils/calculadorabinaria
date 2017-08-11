@@ -20,21 +20,32 @@
         <div class="col-md-6 col-md-offset-3">
         <div style="margin : 0 auto;">
         <div class="divTitulo">
-            <p class="titulo">Conversor Binário</p>
+            <p class="titulo">Conversor</p>
         </div>
         <div class="configdiv">
-        <form>
-      <div class="form-group">
-
-        <label>Decimal:</label>
-        <input type="text" class="form-control" id="decimal">
+ 
+		<form>
+		<label style="padding-right:8px;">De:</label> 
+		<label class="radio-inline" onclick="chooseDecimal()"><input type="radio" name="optradio">Decimal</label>
+		<label class="radio-inline" onclick="chooseHexa()"><input type="radio" name="optradio">Hexadecimal</label>
+		<label class="radio-inline" onclick="chooseOctal()"><input type="radio" name="optradio">Octal</label>
+		<label class="radio-inline" onclick="chooseBinario()"><input type="radio" name="optradio">Binário</label>
+		
+		<div class="form-group">
+        <label id="tipoDe"></label>
+        <input type="text" class="form-control" id="entradaDados">
         
-        <label>Binário</label>
-        <input type="text" class="form-control" id="binario">
-          
+		<div id="convertido" style="padding-top:5px;">
+			<label id="para1">---</label> 
+			<input type="text" class="form-control" id="input1">  
+			<label id="para2">---</label>
+			<input type="text" class="form-control" id="input2"> 
+			<label id="para3">---</label> 
+			<input type="text" class="form-control" id="input3">
+          </div>
+		  
           <div align="center" style="padding-top:10px;">
-        <button type="button" class="btn" onclick="DecBin()" id="btn1" >Decimal para Binário</button>
-            <button type="button" class="btn" onclick="BinDec()" id="btn2" >Binário para Decimal</button>
+        <button type="button" class="btn" onclick="converter()" id="btn1" >Converter</button>
           </div>
 
       </div>
