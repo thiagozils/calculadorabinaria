@@ -32,7 +32,9 @@ body{
 	padding-top:5px;
 }
 
-
+#convertido > label {
+    padding-top:6px;
+}
 
 label { 
 align: left;

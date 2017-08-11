@@ -41,20 +41,37 @@ function converter(){
         var number = document.getElementById('entradaDados').value;
 		switch (entradaEscolhida){
 			case 1:
-			document.getElementById("para1").innerHTML  = "Binário:";
-			document.getElementById("input1").value = DecBin(number);
-			
-			document.getElementById("para2").innerHTML  = "Octal:";
-			document.getElementById("input2").value = 0;
-			
-			document.getElementById("para3").innerHTML  = "Hexadecimal:";
-			document.getElementById("input3").value = 0;
-			
-			
-			break;
+                document.getElementById("para1").innerHTML  = "Binário:";
+                document.getElementById("input1").value = DecBin(number);
+                document.getElementById("para2").innerHTML  = "Octal:";
+                document.getElementById("input2").value = DecOctal(number);
+                document.getElementById("para3").innerHTML  = "Hexadecimal:";
+                document.getElementById("input3").value = 0;
+                break;
 			case 2:
-			document.getElementById("para1").innerHTML  = "Decimal:";
-			document.getElementById("input1").value = BinDec(number);
+                document.getElementById("para1").innerHTML  = "Decimal:";
+                document.getElementById("input1").value = BinDec(number);
+                document.getElementById("para2").innerHTML  = "Octal:";
+                document.getElementById("input2").value = DecOctal(BinDec(number));
+                document.getElementById("para3").innerHTML  = "Hexadecimal:";
+                document.getElementById("input3").value = 0;
+                break;
+            case 3:
+                document.getElementById("para1").innerHTML  = "Decimal:";
+                document.getElementById("input1").value = OctalDec(number);   
+                document.getElementById("para2").innerHTML  = "Binário:";
+                document.getElementById("input2").value = DecBin(OctalDec(number));
+                 document.getElementById("para3").innerHTML  = "Hexadecimal:";
+                document.getElementById("input3").value = 0;
+                break;
+            case 4:
+                document.getElementById("para1").innerHTML  = "Decimal:";
+                document.getElementById("input1").value = 0;   
+                document.getElementById("para2").innerHTML  = "Binário:";
+                document.getElementById("input2").value = 0;
+                document.getElementById("para3").innerHTML  = "Octal:";
+                document.getElementById("input3").value = 0;
+                break;
 		}
 	}
 	
