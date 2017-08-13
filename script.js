@@ -46,7 +46,7 @@ function converter(){
                 document.getElementById("para2").innerHTML  = "Octal:";
                 document.getElementById("input2").value = DecOctal(number);
                 document.getElementById("para3").innerHTML  = "Hexadecimal:";
-                document.getElementById("input3").value = 0;
+                document.getElementById("input3").value = DecHexa(number);
                 break;
 			case 2:
                 document.getElementById("para1").innerHTML  = "Decimal:";
@@ -54,7 +54,7 @@ function converter(){
                 document.getElementById("para2").innerHTML  = "Octal:";
                 document.getElementById("input2").value = DecOctal(BinDec(number));
                 document.getElementById("para3").innerHTML  = "Hexadecimal:";
-                document.getElementById("input3").value = 0;
+                document.getElementById("input3").value = DecHexa(BinDec(number));
                 break;
             case 3:
                 document.getElementById("para1").innerHTML  = "Decimal:";
@@ -62,15 +62,15 @@ function converter(){
                 document.getElementById("para2").innerHTML  = "Binário:";
                 document.getElementById("input2").value = DecBin(OctalDec(number));
                  document.getElementById("para3").innerHTML  = "Hexadecimal:";
-                document.getElementById("input3").value = 0;
+                document.getElementById("input3").value = DecHexa(OctalDec(number));
                 break;
             case 4:
                 document.getElementById("para1").innerHTML  = "Decimal:";
-                document.getElementById("input1").value = 0;   
+                document.getElementById("input1").value = HexaDec(number);   
                 document.getElementById("para2").innerHTML  = "Binário:";
-                document.getElementById("input2").value = 0;
+                document.getElementById("input2").value = DecBin(HexaDec(number));
                 document.getElementById("para3").innerHTML  = "Octal:";
-                document.getElementById("input3").value = 0;
+                document.getElementById("input3").value = DecOctal(HexaDec(number));
                 break;
 		}
 	}
