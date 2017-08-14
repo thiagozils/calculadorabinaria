@@ -123,7 +123,7 @@ function HexaDec(number){
     var result = 0;
     
     for (var i =0; i < number.length;i++){
-        result += Math.pow(16,(number.length-1)-i) * DecHexa(number[i]);
+        result += Math.pow(16,(number.length-1)-i) * convertHexaToDec(number[i].toUpperCase());
     }
     return result;
     
@@ -153,6 +153,28 @@ function convertHexa (number){
     }
 }
     
+function convertHexaToDec (number){
+
+    switch (number){
+        case 'A':
+            return 10;
+        case 'B':
+            return 11;
+        case 'C':
+            return 12;
+        case 'D':
+            return 13;
+        case 'E':
+            return 14;
+        case 'F':
+            return 15;
+        default:
+            return parseInt(number);
+            
+      }  
+    
+    
+    }
 
 
 
