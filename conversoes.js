@@ -16,7 +16,11 @@ function DecBin(number){
         binario[i] = 0;
         binario[i+1] = 1;
     }else{
-        binario[i] = 1;
+        if (resultado == 0){
+            binario[i] = 0;
+        }else{
+            binario[i] = 1;
+        }
     }
         
     var final1='';
